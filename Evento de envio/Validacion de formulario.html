@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<form id="form1">
+	
+
+
+
+
+
+
+	<input type="text" id="nombre" placeholder="Nombre">
+	<input type="text" id="correo" placeholder="Correo electronico">
+
+	<button  type="submit">Enviar</button>
+</form>
+
+
+
+	<script>
+		const form = document.getElementById('form1');
+
+
+		form.addEventListener("submit", function(event){
+
+
+
+			event.preventDefault();
+
+			const nombre = document.getElementById("nombre").value;
+			const correo = document.getElementById("correo").value;
+
+
+			if (nombre == "" || correo == "") {
+
+				alert("Por favor, completa todos los campos.");
+
+			}else {
+
+				alert("Formulario enviado con exito");
+			}
+
+		});
+
+		
+	</script>
+
+</body>
+</html>

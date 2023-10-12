@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<div id="div1">
+	
+
+pasar el ratón aqui
+<p id="contadorMouse">Contador: 0</p>
+
+
+</div>
+
+
+	<script>
+		
+
+		const div1 = document.getElementById("div1");
+		const contador = document.getElementById("contadorMouse");
+
+		let conteo = 0;
+
+		div1.addEventListener("mouseover", function(){
+			
+			conteo++;
+			contador.textContent = `Contador: ${conteo}`;
+
+		} );
+	</script>
+
+</body>
+</html>
